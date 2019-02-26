@@ -1,4 +1,4 @@
-<p>
-  This is <strong>servers</strong> component. This page includes 1 server component.
-</p>
+<button class="btn btn-primary" [disabled]="!allowNewServer">Add new Server</button>
+<p>{{ allowNewServer }}</p>
+<p [innerText]="allowNewServer"></p>
 <app-server></app-server>
