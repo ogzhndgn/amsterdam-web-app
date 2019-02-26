@@ -1,4 +1,2 @@
-<p><strong>Server Component Starts...</strong></p>
-<p>Server with ID #{{ serverId }} status is {{ serverStatus }}</p>
-<p>Server with ID #{{ serverId }} status is {{ getServerStatus() }} returns from method</p>
-<p><strong>Server Component Ends...</strong></p>
+<p [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{online: serverStatus === 'online'}">Server with ID
+  #{{ serverId }} status is {{ getServerStatus() }}</p>
