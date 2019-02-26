@@ -4,7 +4,7 @@
 </label>
 <p>{{ serverName }}</p>
 <button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add new Server</button>
-<p>{{ serverCreationStatus }}</p>
-<p>{{ allowNewServer }}</p>
-<p [innerText]="allowNewServer"></p>
+<p *ngIf="serverCreated">{{ serverCreationStatus }}</p>
+<!--<p>{{ allowNewServer }}</p>-->
+<!--<p [innerText]="allowNewServer"></p>-->
 <app-server></app-server>
