@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="onDisplayDetails()">Display Details</button>
+<p *ngIf="showDetail">{{ detail }}</p>
+<div
+  *ngFor="let element of clickCountArray"
+  [ngStyle]="{backgroundColor: element >= 5 ? 'blue' : 'white'}"
+  [ngClass]="{whitetext: element >= 5}">
+  Button Clicked! {{element}}
+</div>
